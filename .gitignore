@@ -1,0 +1,41 @@
+# Pasta de módulos do Node
+/node_modules/
+
+ 
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+ 
+
+# Ambiente de execução
+.env
+
+ 
+
+# Diretórios do cache do npm e yarn
+.npm
+.yarn-cache
+
+ 
+
+# Arquivos de bloqueio de pacote (descomente se você decidir adicioná-los ao seu repositório)
+# package-lock.json
+# yarn.lock
+
+ 
+
+# Diretório de build/dist
+/dist
+
+ 
+
+# IDE - arquivos e pastas específicas da IDE
+.idea/
+*.iml
+.vscode/
+.vercel
