@@ -3,7 +3,7 @@ const pool = new Pool({
   user: 'yvogpitv',
   host: 'isabelle.db.elephantsql.com',
   database: 'yvogpitv',
-  password: 'rMNAtPWDbJiCLZFgwyd9sqFJ_2GIACt3 ',
+  password: 'rMNAtPWDbJiCLZFgwyd9sqFJ_2GIACt3',
   port: 5432,
 });
 
