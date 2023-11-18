@@ -83,10 +83,27 @@ const deleteCurriculo = (request, response) => {
   });
 };
 
+const getCurriculoById = (id) => {
+  return new Promise((resolve, reject) => {
+    pool.query('SELECT * FROM curriculo WHERE id = $1', [id], (error, results) => {
+      if (error) {
+        reject(error);
+      } else {
+        if (results.rows.length > 0) {
+          resolve(results.rows[0]);
+        } else {
+          resolve(null); // Retorna null se nenhum currículo for encontrado com o ID fornecido
+        }
+      }
+    });
+  });
+};
+
 module.exports = {
   getCurriculos,
   getCurriculoByNome,
   createCurriculo,
   updateCurriculo,
   deleteCurriculo,
+  getCurriculoById,
 };
